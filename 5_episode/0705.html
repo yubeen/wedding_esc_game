@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../esc_style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,target-densitydpi=medium-dpi">
+  </head>
+  <body>
+    <img src="5_ep.jpg"/>
+    <div style="text-align: center; margin-bottom: 50px;">
+        <input type="text" id="answer">
+        <input type="button" onclick="func()" value="정답 확인">
+    </div>
+    <details>
+        <summary>힌트 보기</summary>
+        <div class="tpt">
+          <p>거즈는 받침이 없습니다</p>
+        </div>
+    </details>
+    <script type="text/javascript">
+        function func() {
+            let answer = document.getElementById('answer').value;
+            if(answer == ""){
+                alert('정답을 입력해주세요');
+            }
+            else if(answer == "1205"){
+                window.location.href = "https://yubeen.github.io/wedding_esc_game/6_episode/1205.html";
+            }
+            else{
+                document.getElementById('answer').value = "";
+                window.location.href = "https://yubeen.github.io/wedding_esc_game/exception.html";
+            }
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Amsterdam.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.ttf) format("truetype");
+}
+
+html {
+    margin:0px;
+    padding: 0px;
+}
+
+body {
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    background-color: gainsboro;
+    border:none;
+    outline:none;
+    height:34px;
+    vertical-align:middle;
+    position:relative;
+    border-radius:5px;
+    box-sizing:border-box;
+    padding:0 18px;
+    margin: 5px 0px;
+}
+
+input[type="button"] { 
+    font-family: 'maruburi';
+    background:#ffa0d4;
+    color:#fff;
+    position:relative;
+    cursor:pointer;
+}
+
+.main_contents {
+    font-family: 'Amsterdam';
+    background-color: #f1f1f1;
+    color: #3f4d64;
+    font-weight: 900;
+    line-height: 0.8em;
+}
+
+.title {
+    color: #3f4d64;
+    font-size: 20pt;
+    font-family: 'maruburi';
+    margin: 35px 0px;
+    text-align: center;
+}
+
+.exception {
+    text-align: center;
+    font-size: 2em;
+    margin: 2em 0em;
+}
+
+.exception_button {
+    text-decoration: none;
+    color: white;
+    background-color: #ffa0d4;
+    padding: 1em;
+    text-align: center;
+    font-size: 14pt;
+    border-radius: 50px;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-top: 2em;
+}
+
+.game_btn {
+    display: inline-block;
+    background-color: #f1c0c6;
+    padding: 1em;
+    margin: 1em 0em;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'maruburi';
+}
+
+.game_btn_text {
+    color: white;
+    text-decoration-line: none;
+    font-family: 'maruburi';
+}
+
+/* 아코디언메뉴 */
+details > summary { 
+    font-family: 'Amsterdam';
+    background:#f1c0c6; 
+    color:#fff; 
+    padding: 10px 35px;
+    outline:0; 
+    cursor:pointer; 
+    transition:background 0.5s; 
+    text-align:left; 
+    display: block;
+}
+
+details[open] > summary ~ * { 
+    animation:reveal 0.5s;
+}
+
+summary::-webkit-details-marker { /* Safari 브라우저용 사용자 정의 스타일 */
+    display: none;
+}
+summary {
+    display: block; /* 그 외의 브라우저용 사용자 정의 스타일 */
+}
+
+.tpt { 
+    font-family: 'Amsterdam';
+    padding: 2em;
+    line-height:30px; 
+}
